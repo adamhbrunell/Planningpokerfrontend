@@ -1,0 +1,77 @@
+html,
+body,
+.App,
+#root {
+  height: 100%;
+  margin: 0;
+  user-select: none;
+  font-family: "Spoof", Helvetica, Arial, serif;
+}
+
+.App {
+  display: flex;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Fujitsu-Logo.svg/2560px-Fujitsu-Logo.svg.png');
+  background-repeat: no-repeat;
+  background-position: 2% 2%;
+  background-size: 200px;
+}
+
+.Game {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+}
+
+.menu {
+  background-color: #FFFFFF;
+  flex-basis: 30%;
+  max-height: 100%;
+  overflow-y: scroll;
+  display: none;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  gap: 20px;
+  box-shadow: -2px 0px 7px -1px rgba(0, 0, 0, 0.5);
+}
+
+.menu.show {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  height: fit-content;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid rgb(177, 177, 177);
+  border-radius: 5px;
+}
+
+button:not(:disabled):hover {
+  cursor: pointer;
+  filter: brightness(0.95);
+  transition: all 100ms linear;
+}
+
+.item .task {
+  padding-left: 20px;
+}
+
+.select {
+  padding: 2px;
+  border-radius: 12px;
+}
+
+.player.user {
+  transform: scale(2.0);
+}

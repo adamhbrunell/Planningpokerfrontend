@@ -1,0 +1,16 @@
+.playerFields {
+    display: flex;
+    flex-direction: column;
+}
+.playerFields > *{
+    margin-top: 20px;    
+}
+
+input {
+    width: 300px;
+}
+
+.app {
+    display: flex;
+    justify-content: space-around;
+}

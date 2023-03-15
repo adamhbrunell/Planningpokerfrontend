@@ -1,0 +1,32 @@
+.option-menu-toggle {
+  position: relative;
+}
+
+.dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 2px;
+}
+
+.option-menu {
+  position: absolute;
+  top: calc(100% + 5px);
+  right: 0;
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+  z-index: 1;
+}
+
+.option-menu-item {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.option-menu-item:hover {
+  background-color: gray;
+  color: white;
+}

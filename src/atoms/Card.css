@@ -1,0 +1,10 @@
+img {
+    width: 100px;
+    height: auto;
+}
+
+img:not(.played):hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: transform 0.2s ease-in-out;
+}
